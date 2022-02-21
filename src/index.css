@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    user-select: none;
+  }
+}
+
+@layer utilities {
+
+}
+
+@layer components {
+
+}
