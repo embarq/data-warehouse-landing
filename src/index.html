@@ -12,10 +12,448 @@
   <link rel="preload" href="assets/fonts/Avenir/subset-AvenirLTStd-Book.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Avenir/subset-AvenirLTStd-Black.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./index.css" as="style">
+  <link rel="shortcut icon" href="assets/Logo.svg" type="image/svg">
 </head>
 
-<body>
+<body class="relative min-h-screen">
 
+  <!-- header's & headline's background -->
+  <div class="absolute top-0 left-0 -z-10 w-full h-screen bg-gradient-to-b from-[#F6FAFD] via-white to-white bg-no-repeat md:h-4/5"></div>
+
+  <!-- main header -->
+  <header class="flex justify-between max-w-6xl p-5 md:justify-start md:mx-auto md:py-16">
+    <icon src="assets/Logo.svg" width="48"></icon>
+    <nav class="items-center hidden md:flex ml-28">
+      <ul class="flex space-x-10 text-neutral-500">
+        <li>
+          <a href="#" class="text-neutral-900">About</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-neutral-900">Help</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-neutral-900">Features</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-neutral-900">Signup</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="flex items-center justify-center py-4 bg-white rounded-full shadow-md px-7 md:ml-auto">
+      <div class="font-bold tracking-wide text-neutral-800">Request Demo</div>
+      <icon src="assets/Group-561.svg" width="20" class="ml-4"></icon>
+    </button>
+    <button class="text-purple-450 md:hidden">
+      <icon src="assets/menu-button.svg" width="24"></icon>
+    </button>
+  </header>
+
+  <div class="relative flex flex-col-reverse max-w-6xl md:mx-auto md:flex-row md:mt-12">
+    <div class="px-5 md:max-w-2xl md:px-0">
+      <h1 class="text-4xl text-gray-900 font-bold leading-tight md:text-[5rem]">
+        Save your data storage here.
+      </h1>
+      <p class="max-w-xs pr-6 mt-6 text-sm text-gray-500 md:mt-12 md:text-lg md:max-w-sm md:pr-3 md:leading-7">
+        Data Warehouse is a data storage area that has been
+        tested for security, so you can store your data here
+        safely but not be afraid of being stolen by others.
+      </p>
+      <a
+        href="#"
+        class="
+          flex items-center justify-center h-[3.75rem] mt-6 px-9 rounded-full bg-purple-450 text-white text-center
+          md:mt-12 md:w-44">
+        Learn more
+      </a>
+    </div>
+    <picture>
+      <source srcset="assets/image11.png?as=avif" type="image/avif" />
+      <source srcset="assets/image11.png?as=webp" type="image/webp" />
+      <img
+        src="assets/image11.png"
+        alt="🏞"
+        width="885"
+        height="468"
+        class="mx-auto mt-10 mb-5 h-min md:absolute md:top-28 md:-right-24 md:m-0">
+    </picture>
+  </div>
+
+  <div class="px-5 mt-20 md:max-w-6xl md:mx-auto md:mt-56 md:pl-0 md:pr-9">
+    <div class="flex flex-col items-center px-8 pb-10 rounded-4xl bg-rose-150 md:flex-row md:justify-between md:py-8 md:px-24">
+      <picture class="contents">
+        <source data-srcset="assets/image2.png?as=avif" type="image/avif" />
+        <source data-srcset="assets/image2.png?as=webp" type="image/webp" />
+        <img
+          data-src="assets/image2.png"
+          width="447"
+          height="504"
+          alt="🏞"
+          class="lazy md:-translate-x-20">
+      </picture>
+      <div class="mt-8 md:max-w-lg md:mt-0 ">
+        <h2 class="font-bold text-gray-800 text-2xl md:text-[2.5rem] md:leading-tight">
+          We are a high-level data storage bank
+        </h2>
+        <p class="mt-4 text-sm pr-2 md:mt-10 md:pr-0 md:text-lg text-gray-600 text-opacity-90">
+          The place to store various data that you can access at any time through
+          the internet  and where you can carry it.<br>
+          This very flexible storage area has a high level of security. To enter
+          into your own data you must enter the password that you created when you
+          registered in this Data Warehouse.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mt-20 md:mt-36 md:mx-auto md:px-2">
+    <h2 class="
+      font-bold text-gray-800 text-2xl text-center
+      md:text-[2.5rem] md:leading-tight">
+      Features
+    </h2>
+    <p class="px-5 mt-4 text-center text-zinc-600 md:max-w-2xl md:mx-auto md:mt-12 md:px-11 md:text-lg">
+      Some of the features and advantages that we provide for those of you
+      who store data in this Data Warehouse.
+    </p>
+    <div class="grid gap-y-12 mt-16 md:mt-24 xl:grid-cols-2 xl:-ml-16">
+
+      <article class="
+        flex flex-col relative w-11/12 px-5 py-10 mx-auto rounded-4xl bg-teal-450 bg-opacity-10
+        md:max-w-md md:w-full md:pt-16 md:pb-8 md:pr-12 md:pl-28 md:bg-transparent md:translate-x-20">
+        <h3 class="
+          text-center text-2xl text-zinc-800
+          md:w-56 md:mr-0 md:ml-auto md:text-left">
+          Search Data
+        </h3>
+        <p class="
+          mt-8 mb-4 leading-relaxed text-center text-gray-500
+          md:w-56 md:ml-auto md:mr-0 md:text-left">
+          Don't worry if your data is very large, the Data Warehoue provides
+          a search engine, which is useful for making it easier to find data
+          effectively saving time.
+        </p>
+        <a
+          href="#"
+          class="
+            flex items-center justify-center w-48 mx-auto mt-auto px-4 py-2 transition-colors rounded-md group
+            md:ml-auto md:justify-start
+            hover:bg-teal-450 hover:bg-opacity-10 hover:text-teal">
+          Learn more
+          <div class="ml-5 transition-colors text-purple-450 group-hover:text-teal-450">
+            <icon src="assets/Group-561.svg" width="20"></icon>
+          </div>
+        </a>
+        <div class="absolute inset-0 hidden -z-10 text-teal-450 text-opacity-10 md:block">
+          <icon
+            src="assets/features-card.svg"
+            width="433"
+            height="358"
+            class="ml-auto">
+          </icon>
+        </div>
+        <div class="-order-1 md:block md:absolute md:-left-20 md:top-20">
+          <picture>
+            <source data-srcset="assets/image31.png?as=avif" type="image/avif" />
+            <source data-srcset="assets/image31.png?as=webp" type="image/webp" />
+            <img
+              data-src="assets/image31.png?quality=100"
+              width="232"
+              height="211"
+              alt="🏞"
+              class="lazy mx-auto" />
+          </picture>
+        </div>
+      </article>
+
+      <article class="
+        flex flex-col relative w-11/12 px-5 py-10 mx-auto rounded-4xl bg-purple-450 bg-opacity-10
+        md:max-w-md md:w-full md:pt-16 md:pb-8 md:pr-12 md:pl-28 md:bg-transparent md:translate-x-20">
+        <h3 class="
+          mt-8 text-center text-2xl text-zinc-800
+          md:w-56 md:mt-0 md:mr-0 md:ml-auto md:text-left">
+          24 Hours Access
+        </h3>
+        <p class="
+          mt-8 mb-4 leading-relaxed text-center text-gray-500
+          md:w-56 md:ml-auto md:mr-0 md:text-left">
+          Access is given 24 hours a full morning to night and
+          meet again in the morning, giving you comfort when
+          you need data when urgent.
+        </p>
+        <a
+          href="#"
+          class="
+            flex items-center justify-center w-48 mx-auto mt-auto px-4 py-2 transition-colors rounded-md group
+            md:ml-auto md:justify-start
+            hover:bg-purple-450 hover:bg-opacity-10 hover:text-teal">
+          Learn more
+          <div class="ml-5 transition-colors text-purple-450">
+            <icon src="assets/Group-561.svg" width="20"></icon>
+          </div>
+        </a>
+        <div class="absolute inset-0 hidden -z-10 text-purple-450 text-opacity-10 md:block">
+          <icon
+            src="assets/features-card.svg"
+            width="433"
+            height="358"
+            class="ml-auto">
+          </icon>
+        </div>
+        <div class="-order-1 md:block md:absolute md:-left-24 md:top-20">
+          <picture>
+            <source data-srcset="assets/image4.png?as=avif" type="image/avif" />
+            <source data-srcset="assets/image4.png?as=webp" type="image/webp" />
+            <img
+              data-src="assets/image4.png?quality=100"
+              width="241"
+              height="185"
+              alt="🏞"
+              class="lazy mx-auto" />
+          </picture>
+        </div>
+      </article>
+
+      <article class="
+        flex flex-col relative w-11/12 px-5 py-10 mx-auto rounded-4xl bg-pink-450 bg-opacity-10
+        md:max-w-md md:w-full md:pt-16 md:pb-8 md:pr-12 md:pl-28 md:bg-transparent md:translate-x-20">
+        <h3 class="
+          mt-8 text-center text-2xl text-zinc-800
+          md:w-56 md:mt-0 md:mr-0 md:ml-auto md:text-left">
+          Print Out
+        </h3>
+        <p class="
+          mt-8 mb-4 leading-relaxed text-center text-gray-500
+          md:w-56 md:ml-auto md:mr-0 md:text-left">
+          Print out service gives you convenience if someday
+          you need print data, just edit it all and just print it.
+        </p>
+        <a
+          href="#"
+          class="
+            flex items-center justify-center w-48 mx-auto mt-auto px-4 py-2 transition-colors rounded-md group
+            md:ml-auto md:justify-start
+            hover:bg-pink-450 hover:bg-opacity-10 hover:text-teal">
+          Learn more
+          <div class="ml-5 transition-colors text-purple-450 group-hover:text-pink-450">
+            <icon src="assets/Group-561.svg" width="20"></icon>
+          </div>
+        </a>
+        <div class="absolute inset-0 hidden -z-10 text-pink-450 text-opacity-10 md:block">
+          <icon
+            src="assets/features-card.svg"
+            width="433"
+            height="358"
+            class="ml-auto">
+          </icon>
+        </div>
+        <div class="-order-1 md:block md:absolute md:-left-24 md:top-32">
+          <picture>
+            <source data-srcset="assets/image51.png?as=avif" type="image/avif" />
+            <source data-srcset="assets/image51.png?as=webp" type="image/webp" />
+            <img
+              data-src="assets/image51.png?quality=100"
+              width="245"
+              height="181"
+              alt="🏞"
+              class="lazy mx-auto" />
+          </picture>
+        </div>
+      </article>
+
+      <article class="
+        flex flex-col relative w-11/12 px-5 py-10 mx-auto rounded-4xl bg-sky-550 bg-opacity-10
+        md:max-w-md md:w-full md:pt-16 md:pb-8 md:pr-12 md:pl-28 md:bg-transparent md:translate-x-20">
+        <h3 class="
+          text-center text-2xl text-zinc-800
+          md:w-56 md:mr-0 md:ml-auto md:text-left">
+          Security Code
+        </h3>
+        <p class="
+          mt-8 mb-4 leading-relaxed text-center text-gray-500
+          md:w-56 md:ml-auto md:mr-0 md:text-left">
+          Data Security is one of our best facilities. Allows for your files
+          to be safer. The file can be secured with a code or password that
+          you created, so only you can open the file.
+        </p>
+        <a
+          href="#"
+          class="
+            flex items-center justify-center w-48 mx-auto mt-auto px-4 py-2 transition-colors rounded-md group
+            md:ml-auto md:justify-start
+            hover:bg-sky-550 hover:bg-opacity-10 hover:text-teal">
+          Learn more
+          <div class="ml-5 transition-colors text-purple-450 group-hover:text-sky-550">
+            <icon src="assets/Group-561.svg" width="20"></icon>
+          </div>
+        </a>
+        <div class="absolute inset-0 hidden -z-10 text-sky-550 text-opacity-10 md:block">
+          <icon
+            src="assets/features-card.svg"
+            width="433"
+            height="358"
+            class="ml-auto">
+          </icon>
+        </div>
+        <div class="-order-1 md:block md:absolute md:-left-24 md:top-20">
+          <picture>
+            <source data-srcset="assets/image61.png?as=avif" type="image/avif" />
+            <source data-srcset="assets/image61.png?as=webp" type="image/webp" />
+            <img
+              data-src="assets/image61.png?quality=100"
+              width="230"
+              height="201"
+              alt="🏞"
+              class="lazy mx-auto" />
+          </picture>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="mt-36"></div>
+
+  <div class="mt-36 h-0.5 bg-purple-450 bg-opacity-20"></div>
+
+  <footer class="
+    max-w-xs mx-auto py-24
+    md:max-w-6xl md:py-24">
+
+    <div class="
+      flex flex-col px-5
+      md:flex-row md:items-center md:justify-between md:px-0">
+      <div>
+        <h2 class="text-4xl font-bold text-gray-700">Try for free!</h2>
+        <p class="mt-5 text-lg text-gray-500">Get limited 1 week free try our features!</p>
+      </div>
+      <div class="
+        flex flex-col mt-5 space-y-6
+        md:flex-row md:space-y-0 md:space-x-8">
+        <a
+          href="#"
+          class="
+            flex items-center justify-center h-[3.75rem] px-9 rounded-full bg-pink-450 text-lg text-white text-center
+            md:w-44">
+          Learn more
+        </a>
+        <a
+          class="
+            flex items-center justify-center h-[3.75rem] py-4 bg-white rounded-full shadow-md px-7
+            md:ml-auto"
+          href="#">
+          <div class="font-bold tracking-wide text-neutral-800">Request Demo</div>
+          <div class="ml-4 text-purple-450">
+            <icon src="assets/Group-561.svg" width="20"></icon>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-14 flex flex-col space-y-10
+      md:grid md:grid-cols-12 md:gap-y-24 md:mt-36 md:space-y-0">
+      <div class="
+        hidden px-5
+        md:block md:px-0 md:col-span-3">
+        <div class="flex items-center">
+          <icon src="assets/Logo.svg" width="48"></icon>
+          <div class="ml-5 font-bold text-xl">DataWarehouse</div>
+        </div>
+        <div class="mt-16 leading-7">
+          <p class="text-gray-800">Warehouse Society, 234</p>
+          <p class="text-gray-800">Bahagia Ave Street&nbsp;&nbsp;&nbsp;PRBW 29281</p>
+          <div class="mt-2.5"></div>
+          <p class="text-gray-500">info@warehouse.project</p>
+          <p class="text-gray-500">1-232-3434 (Main)</p>
+        </div>
+      </div>
+
+      <div class="col-span-3"></div>
+
+      <div class="
+        grid grid-cols-2 gap-y-5 gap-x-16 px-5
+        md:grid-cols-3 md:col-span-6 md:gap-x-0">
+        <nav>
+          <h3 class="font-bold">About</h3>
+          <ul class="mt-6 leading-10 md:mt-8">
+            <li><a href="#" class="text-gray-800 hover:underline">Profile</a></li>
+            <li><a href="#" class="text-gray-800 hover:underline">Features</a></li>
+            <li><a href="#" class="text-gray-800 hover:underline">Careers</a></li>
+            <li><a href="#" class="text-gray-800 hover:underline">DW News</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h3 class="font-bold">Help</h3>
+          <ul class="mt-6 leading-10 md:mt-8">
+            <li><a href="#" class="text-gray-800 hover:underline">Support</a></li>
+            <li><a href="#" class="text-gray-800 hover:underline">Sign up</a></li>
+            <li><a href="#" class="text-gray-800 hover:underline">Guide</a></li>
+            <li><a href="#" class="text-gray-800 hover:underline">Q&A</a></li>
+          </ul>
+        </nav>
+        <nav class="col-span-full md:col-span-1">
+          <h3 class="font-bold">Social Media</h3>
+          <ul class="flex space-x-3.5 mt-6 md:mt-8">
+            <li>
+              <a
+                href="#"
+                title="Our Facebook"
+                class="
+                  inline-block bg-gray-200 bg-opacity-90 text-white rounded-full transition-colors
+                  hover:bg-purple-450">
+                <icon src="assets/socials-f.svg" width="50"></icon>
+                <span class="sr-only">Data Warehouse on Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                title="Our Twitter"
+                class="
+                  inline-block bg-gray-200 bg-opacity-90 text-white rounded-full transition-colors
+                  hover:bg-purple-450">
+                <icon src="assets/socials-t.svg" width="50"></icon>
+                <span class="sr-only">Data Warehouse on Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                title="Our Instagram"
+                class="
+                  inline-block bg-gray-200 bg-opacity-90 text-white rounded-full transition-colors
+                  hover:bg-purple-450">
+                <icon src="assets/socials-i.svg" width="50"></icon>
+                <span class="sr-only">Data Warehouse on Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="px-5 md:hidden">
+        <div class="flex items-center">
+          <icon src="assets/Logo.svg" width="48"></icon>
+          <div class="ml-5 font-bold text-xl">DataWarehouse</div>
+        </div>
+
+        <div class="mt-10">
+          <p class="text-gray-800">Warehouse Society, 234</p>
+          <p class="text-gray-800">Bahagia Ave Street&nbsp;&nbsp;&nbsp;PRBW 29281</p>
+          <div class="mt-2.5"></div>
+          <p class="text-gray-500">info@warehouse.project</p>
+          <p class="text-gray-500">1-232-3434 (Main)</p>
+        </div>
+      </div>
+
+      <div class="px-5 md:px-0 md:col-span-full">
+        <div class="text-xs leading-5 tracking-wide text-gray-800">© Datawarehouse™, 2020. All rights reserved.</div>
+        <div class="text-xs leading-5 tracking-wide text-gray-800">Company Registration Number: 21479524.</div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script>window.lazyLoadOptions = {}</script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js" async></script>
 </body>
 
 </html>

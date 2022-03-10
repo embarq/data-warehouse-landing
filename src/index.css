@@ -19,3 +19,21 @@
 @layer components {
 
 }
+
+img.lazy {
+  opacity: 0;
+}
+
+img:not(.initial) {
+  transition: opacity 200ms;
+}
+
+img.initial,
+img.loaded,
+img.error {
+  opacity: 1;
+}
+
+img:not([src]):not([srcset]) {
+  visibility: hidden;
+}
